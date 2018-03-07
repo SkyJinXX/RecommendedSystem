@@ -50,15 +50,7 @@
                             <a href="#"><span class="label label-success">Online</span></a>                           
                         </div>
                     </div>
-                </div><!-- sidebar-header  -->
-                <div class="sidebar-search">
-                    <div>                   
-                        <div class="input-group">                          
-                            <input type="text" class="form-control search-menu" placeholder="Search for...">
-                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>                    
-                </div><!-- sidebar-search  -->
+                </div>
                 <div class="sidebar-menu">
                     <ul>
                         <li class="header-menu"><span>Dropdown  menu</span></li>
@@ -74,7 +66,7 @@
                             </div>
                         </li>                  
                         <li class="sidebar-dropdown">
-                            <a href="#"><i class="fa fa-photo"></i><span>Menu 2</span><span class="badge">3</span></a>
+                            <a href="#"><i class="fa fa-photo"></i><span>收藏</span><span class="badge">3</span></a>
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li><a href="#">submenu 1 <span class="badge">2</span></a></li>
@@ -96,7 +88,7 @@
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="#"><i class="fa fa-diamond"></i><span>修改用户信息</span></a>
+                            <a href="#"><i class="fa fa-diamond"></i><span>修改个人信息</span></a>
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li><a href="#">submenu 1</a></li>
@@ -136,7 +128,7 @@
 				<li>
 					<a href="#" class="iconfont pet_nav_yiyuan ">&#xe602;</a><span>分类7</span></li>
 				<li>
-					<a href="" class="iconfont pet_nav_dianpu ">&#xe604;</a><span>分类8</span></li>
+					<a href="#" class="iconfont pet_nav_dianpu ">&#xe604;</a><span>分类8</span></li>
 				<li>
 					<a href="javascript:;" class="iconfont pet_nav_gengduo ">&#xe600;</a><span>分类9</span></li>
 			</ul>

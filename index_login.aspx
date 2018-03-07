@@ -18,6 +18,12 @@
 	<link href="css/button.css" rel="stylesheet" type="text/css" />
 	<link href="css/login_style.css" rel="stylesheet" type="text/css" />
 	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="assets/js//jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
 	<title>首页</title>
 </head>
 <body>
@@ -46,13 +52,13 @@
                                 <div class="container">
                                     <h1>Welcome</h1>
                                     <form class="form">
-                                        <input type="text" placeholder="Username">
-                                        <input type="password" placeholder="Password">
+                                        <input type="text" placeholder="Username"/>
+                                        <input type="password" placeholder="Password"/>
                                         <button type="submit" id="login-button">Login</button>
                                     </form>
                                 </div>
                                 <div class="register">
-                                    <a>还没有帐号?点我注册</a>
+                                    <a href="register.aspx">还没有帐号?点我注册</a>
                                 </div>
                                 <ul class="bg-bubbles">
                                     <li></li>
@@ -297,11 +303,5 @@
     </footer>
 </div><!-- page-wrapper -->
 	
-	
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="assets/js//jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-</body>
+	</body>
 </html>
