@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="register.aspx.cs" Inherits="register" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="login" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="css/register.css" rel="stylesheet" type="text/css"/>
+    <link href="css/login.css" rel="stylesheet" type="text/css"/>
 	<link href="Bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet" />
 	<link href="Bootstrap/font-awesome.min.css" type="text/css" rel="stylesheet" />
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
@@ -16,7 +16,7 @@
 	<script src="assets/js//jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
-    <title>凛冬将至 | 帐号注册</title>
+    <title>凛冬将至 | 登录</title>
 </head>
 <body>
     <form id="form1" class="form" runat="server">
@@ -33,12 +33,11 @@
                     <div class="line"></div>
                 </div>
                 <div class="container">
-                    <h1>Welcome to register</h1>
+                    <h1>Welcome to login</h1>
                     <div class="box">
                         <input type="text" placeholder="Username" />
                         <input type="password" placeholder="Password" />
-                        <input type="text" placeholder="E-maiil" />
-                        <asp:Button ID="Button_register" CssClass="loginButton" runat="server" Text="Register" OnClick="Button_register_Click" />
+                        <asp:Button ID="Button_login" CssClass="loginButton" runat="server" Text="Login" OnClick="Button_login_Click" />
                     </div>
                 </div>
                 <div class="footer">

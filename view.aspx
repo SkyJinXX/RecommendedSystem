@@ -12,6 +12,7 @@
     <title>内容页</title>
 </head>
 <body style="background:#ececec">
+
 <div class="pet_mian" >
     <div class="pet_head">
   <header data-am-widget="header"

@@ -1,0 +1,149 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="user_imformation.aspx.cs" Inherits="user_imformation" %>
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="Bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="Bootstrap/font-awesome.min.css" type="text/css" rel="stylesheet" />
+	<link href="css/htmleaf-demo.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="css/wap.css?2" rel="stylesheet" type="text/css" />
+	<link href="css/index.css" rel="stylesheet" type="text/css" />
+	<link href="css/button.css" rel="stylesheet" type="text/css" />
+    <link href="css/user_imformation.css" rel="stylesheet" type="text/css" />
+	
+	<title>用户信息</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page-wrapper toggled">
+            <div class="top">
+                <div class="search_position">
+                    <div class="sidebar-search">
+                        <div>
+                            <div class="input-group">
+                                <input type="text" class="form-control search-menu" placeholder="Search for...">
+                                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sidebar-search  -->
+                </div>
+            </div>
+            <nav id="sidebar" class="sidebar-wrapper">
+                <div class="sidebar-content">
+                    <a href="#" id="toggle-sidebar"><i class="fa fa-bars i_position"></i></a>
+                    <div class="sidebar-brand">
+                        <a href="index.aspx">凛冬将至</a>
+                    </div>
+                    <div class="sidebar-header">
+                        <div class="user-pic">
+                            <img class="img-responsive img-rounded" src="assets/img/user.jpg" alt="">
+                        </div>
+                        <div class="user-info">
+                            <span class="user-name"><strong>Username</strong></span>
+                            <span class="user-role">Identity</span>
+                            <div class="user-status">
+                                <a href="#"><span class="label label-success">Online</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li class="sidebar-dropdown">
+                                <a href="#"><i class="fa fa-tv"></i><span>兴趣标签</span><span class="label label-danger"></span></a>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a href="#"><i class="fa fa-photo"></i><span>收藏</span></a>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a href="#"><i class="fa fa-bar-chart-o"></i><span>修改密码</span></a>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a href="#"><i class="fa fa-diamond"></i><span>修改个人信息</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- sidebar-menu  -->
+                </div>
+                <!-- sidebar-content  -->
+
+                <div class="sidebar-footer">
+                    <div style="width: 130px; height: 30px;"></div>
+                    <div>
+                        <asp:Button ID="Button_setting" CssClass="setting" runat="server" Text="" OnClick="Button_setting_Click" />
+                    </div>
+                    <div>
+                        <asp:Button ID="Button_logout" CssClass="logout" runat="server" Text="" OnClick="Button_logout_Click" />
+                    </div>
+                </div>
+            </nav>
+            <!-- sidebar-wrapper  -->
+            <main class="page-content">
+                <div class="container-fluid">
+                    <header class="htmleaf-header">
+                        <div class="pet_circle_nav">
+                        </div>
+                    </header>
+                    <div class="menu">
+                        <a>个性推荐</a>
+                        <a>全部资讯</a>
+                    </div>
+                    <div class="table">
+                        <div class="table_inside">
+                            <div class="message_title">
+                                <asp:Label ID="Label1" runat="server" Text="标题1"></asp:Label>
+                            </div>
+                            <div class="subline"></div>
+                            <div class="message_line">
+                                <asp:Label ID="Label2" runat="server" Text="信息1"></asp:Label><br />
+                                <asp:Label ID="Label3" runat="server" Text="信息2"></asp:Label><br />
+                                <asp:Label ID="Label4" runat="server" Text="信息3"></asp:Label>
+                            </div>
+                            <div class="message_title">
+                                <asp:Label ID="Label5" runat="server" Text="标题2"></asp:Label>
+                            </div>
+                            <div class="subline"></div>
+                            <div class="message_line">
+                                <asp:Label ID="Label7" runat="server" Text="信息1"></asp:Label><br />
+                                <asp:Label ID="Label8" runat="server" Text="信息2"></asp:Label><br />
+                                <asp:Label ID="Label9" runat="server" Text="信息3"></asp:Label>
+                            </div>
+                            <div class="message_title">
+                                <asp:Label ID="Label6" runat="server" Text="标题3"></asp:Label>
+                            </div>
+                            <div class="subline"></div>
+                            <div class="message_line">
+                                <asp:Label ID="Label10" runat="server" Text="信息1"></asp:Label><br />
+                                <asp:Label ID="Label11" runat="server" Text="信息2"></asp:Label><br />
+                                <asp:Label ID="Label12" runat="server" Text="信息3"></asp:Label>
+                            </div>
+                            <div class="button">
+                                <asp:Button ID="Button_cancel" runat="server" Text="取消" OnClick="Button_cancel_Click" />
+                                <asp:Button ID="Button_confirm" runat="server" Text="确认" OnClick="Button_confirm_Click" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main><!-- page-content" -->
+            <footer>
+                footer is unfinshed
+            </footer>
+        </div>
+        <!-- page-wrapper -->
+
+
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="assets/js//jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </form>
+</body>
+</html>

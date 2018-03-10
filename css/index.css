@@ -38,6 +38,29 @@
 	float: left;
 }
 
+.setting {
+    width: 84.5px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    background: url(../img/setting/setting.png) center no-repeat;
+}
+
+.logout {
+    width: 84.5px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    background: url(../img/setting/logout.png) center  no-repeat;
+}
+
+.line {
+    width: 85%;
+    margin: auto;
+    height: 1px;
+    background-color: #CCCCCC;
+}
+
 /*登录框*/
 .htmleaf-container{
 	width: 100%;

@@ -1,4 +1,4 @@
-* {
+﻿* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -37,14 +37,14 @@
 }
 
 .login_register_button {
-    width: 35%;
-    float: right;
+    width:35%;
+    float:right;
 }
 
 .sublogin_register_button {
-    width: 28%;
-    margin-left: 5%;
-    float: left;
+    width:28%;
+    margin-left:5%;
+    float:left;
 }
 
 .loginButton {
@@ -63,7 +63,7 @@
     font-size: 18px;
     color: white;
     -webkit-transition-duration: 0.5s;
-    -moz-transition-duration:0.5s;
+    -moz-transition-duration: 0.5s;
     transition-duration: 0.5s;
     font-weight: 300;
 }
