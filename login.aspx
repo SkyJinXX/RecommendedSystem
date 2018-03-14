@@ -35,8 +35,8 @@
                 <div class="container">
                     <h1>Welcome to login</h1>
                     <div class="box">
-                        <input type="text" placeholder="Username" />
-                        <input type="password" placeholder="Password" />
+                        <asp:TextBox ID="Username" placeholder="Username" runat="server" required="required"></asp:TextBox>
+                        <asp:TextBox ID="Password" placeholder="Password" runat="server" required="required" TextMode="Password"></asp:TextBox>
                         <asp:Button ID="Button_login" CssClass="loginButton" runat="server" Text="Login" OnClick="Button_login_Click" />
                     </div>
                 </div>

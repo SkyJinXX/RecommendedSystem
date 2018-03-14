@@ -35,9 +35,9 @@
                 <div class="container">
                     <h1>Welcome to register</h1>
                     <div class="box">
-                        <input type="text" placeholder="Username" />
-                        <input type="password" placeholder="Password" />
-                        <input type="text" placeholder="E-maiil" />
+                        <asp:TextBox ID="Username" runat="server" placeholder="Username" maxlength="10" required="required" ></asp:TextBox>
+                        <asp:TextBox ID="Password" runat="server" placeholder="Password" maxlength="20" required="required" TextMode="Password"></asp:TextBox>
+                        <asp:TextBox ID="Email" runat="server" placeholder="E-mail" maxlength="20" required="required"></asp:TextBox>
                         <asp:Button ID="Button_register" CssClass="loginButton" runat="server" Text="Register" OnClick="Button_register_Click" />
                     </div>
                 </div>
