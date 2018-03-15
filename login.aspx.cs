@@ -21,14 +21,14 @@ public partial class login : System.Web.UI.Page
         objConnection.ConnectionString = ConfigurationManager.ConnectionStrings["ConStr"].ToString();
         objConnection.Open();
 
-        String Sqlpwd = "Select password From userinfo Where username = '" + Username.Text + "'";
+        String Sqlpwd = "Select Upassword From Users Where Uusername = '" + Username.Text + "'";
         SqlCommand cmd = new SqlCommand(Sqlpwd, objConnection);
         cmd.CommandText = Sqlpwd;
         cmd.ExecuteScalar();
 
         String pwd = (String)cmd.ExecuteScalar();
 
-        
+     
         if (cmd.ExecuteScalar() == null)
         {
             Response.Write("<script>alert('用户名错误!');window.location.href ='login.aspx'</script>");
